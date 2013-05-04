@@ -3,19 +3,22 @@ body {
 }
 
 a:link, a:visited {
-  color: #0062A0;
-  text-decoration: underline;
+/*  color: #0062A0; */
+  color: #b62c2c; /* Rot */
+/*  text-decoration: underline; */
+  text-decoration: none;
 }
 
 a:hover {
-  color: #202124;
-  text-decoration: none;
+/*  color: #202124;
+  text-decoration: none; */
+  text-decoration: underline;
 }
 
 a:active {
-  color: #202124;
-  text-decoration: none;
-  color: #000;
+/*  color: #202124;
+  text-decoration: none; 
+  color: #000; */
 }
 
 hr {
@@ -27,23 +30,27 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  letter-spacing: -0.05em;
+/*  letter-spacing: -0.05em; */
+  letter-spacing: 0.02em;
  /* font-family: Georgia, 'Times New Roman', serif; */
   font-family: Arial, Helvetica, Verdana, sans-serif;
 }
 
 h1 {
-  font-size: 36px;
+/*  font-size: 36px; */
+  font-size: 20px;
 }
 
 h2 {
-  font-size: 28px;
+/*  font-size: 28px; */
+  font-size: 20px;
 }
 
 /* Make site titles the same size if it's an H1 (home) or H2 (internal) */
 h1.site-name,
 h2.site-name {
-  font-size: 36px;
+/*  font-size: 36px; */
+  font-size: 20px;
 }
 
 /* Make it a bit smaller for block headers */
@@ -53,7 +60,8 @@ h2.block-title {
 }
 
 h2.node-title {
-  font-size: 28px;
+/*  font-size: 28px; */
+  font-size: 20px;
 }
 
 h3 {

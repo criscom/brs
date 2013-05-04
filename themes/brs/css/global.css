@@ -1,2 +1,222 @@
+/****** criscom: 04.05.2013 -- BASIC STYLESHEET MOBILE FIRST ******/
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+body
+	{
+		background: url(../images/body_bg.jpg);
+		background-color: #c0beba;
+		background-repeat: no-repeat;
+		background-position: top left;
+		/* Font Stylings in omega-text.css */
+		color: #515151;
+	}
+
+p, li
+	{
+		color: #515151;
+	}
+
+img.file-icon
+	{
+		display: none;
+	}
+
+img#logo
+	{
+		margin-top: 20px;
+	}
+
+/* @group Hauptmenü */
+
+.block-main-menu ul.menu li
+	{
+		list-style: none;
+		list-style-type: none;
+		list-style-image: none;		
+	}
+
+/* Hauptmenülinks vertikal ausrichten */
+.block-main-menu>div>div>ul.menu>li
+	{
+		margin-top: 28px;
+	}
+
+.block-main-menu ul.menu li a
+	{
+		color: white;
+		font-style: italic;
+		text-transform: uppercase;
+		font-weight: normal!important;
+	}
+
+.block-main-menu>div>div>ul.menu>li>a
+	{
+		font-size: 20px;
+	}
+
+.block-main-menu ul.menu li a.active
+	{
+		color: #d9d86e; /* Gelb */
+
+	}
+
+/* @group Submenüs */
+
+.block-main-menu ul.menu li.active-trail ul.menu li
+	{
+		margin-top: 5px;
+		margin-left: 0px;
+	}
+
+.block-main-menu ul.menu li.active-trail ul.menu li a.active
+	{
+		display: block;
+		height: 19px;
+		background: url(../images/arrow-yellow.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		padding-top: 2px;
+		padding-left: 45px;
+		
+	}
+
+/* @end Submenüs */
+
+/* @end Hauptmenü */
+
+/* @group Einfache Seite ==> Geschichte Basic Stylings */
+#region-content .region-content-inner
+
+	{
+		margin-top: 100px;
+	}
+
+.node-page .group-header
+
+	{
+		margin-bottom: 35px;
+	}
+
+.node-page .group-left
+
+	{
+		width: 60%;
+		margin-right: 5%;
+	}
+
+.node-page .group-right
+
+	{
+		width: 35%;
+	}
+
+h2
+	{
+		background: url(../images/arrow-grey.png);
+		background-repeat: no-repeat;
+		background-position: left center;
+		padding-left: 35px;
+		color: #575757;
+		text-transform: uppercase;
+		font-weight: normal!important;
+
+	}
+
+span.text-header
+	{
+		font-size: 20px
+	}
+
+.field-name-field-allgemeines-bild div.field-items div.field-item 
+	{
+		border: 3px solid #686468;
+	}
+
+/* Slogan */
+
+.node-page .group-footer .node-slogan
+	{
+		text-align: center;
+		height: 106px;
+		background: url(../images/slogan_bg.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		padding-top: 40px;
+	}
+
+.node-page .group-footer .node-slogan .field-name-title div div h2
+	{
+		background: none;
+		margin-bottom: 0px;
+		font-size: 32px;
+		color: #edf571;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+	}
+
+.node-page .group-footer .node-slogan .field-name-field-subtext-slogan
+	{
+		font-size: 20px;
+		color: #575757;
+		font-style: italic;
+	}
+/* @end Einfache Seite ==> Geschichte Basic Stylings */
+
+
+/* @group Footer */
+
+#zone-footer-wrapper
+	{
+		background: url(../images/footer-with-background.jpg);
+		background-position: left top;
+		background-repeat: no-repeat;
+	}
+
+#zone-footer-wrapper .zone-footer .region
+	{
+		margin-top: 40px;
+	}
+
+#zone-footer-wrapper .zone-footer .region h2
+	{
+		color: white;
+		background: url(../images/arrow-white.png);
+		background-position: left 3px;
+		background-repeat: no-repeat;
+		font-style: italic;
+
+	}
+
+.region-footer-first ul.menu
+	{
+		margin-top: 18px;
+	}
+
+.region-footer-first ul.menu li
+	{
+		list-style: none;
+		list-style-type: none;
+		list-style-image: none;
+	}
+
+.region-footer-first ul.menu li a
+	{
+		color: white;
+		text-transform: uppercase;
+	}
+
+.region-footer-first ul.menu li a.active
+	{
+		color: #edf571;
+	}
+
+.region-footer-second .block-1 div.content,
+.region-footer-third .block-2 div.content
+	{
+		margin-top: 21px;
+	}
+
+.region-footer-second .block-1 div div.content p
+	{
+		color: white;
+	}
