@@ -4,14 +4,26 @@
 
 body
 	{
-		background: url(../images/body_bg.jpg);
+/*		background: url(../images/body_bg.jpg);
 		background-color: #c0beba;
 		background-repeat: no-repeat;
-		background-position: top left;
+		background-position: top left; */
+		background: url(../images/body_tile.jpg);
+		background-repeat: repeat;
 		/* Font Stylings in omega-text.css */
 		color: #515151;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	}
 
+#section-header .zone-menu-wrapper
+	{
+		background: url(../images/header_bg.jpg);
+		background-repeat: repeat-x;
+		background-position: left top;
+		background-color: #c0beba; 
+		height: 123px;
+	}
+	
 p, li
 	{
 		color: #515151;
@@ -33,13 +45,19 @@ img#logo
 	{
 		list-style: none;
 		list-style-type: none;
-		list-style-image: none;		
+		list-style-image: none;
+
 	}
 
 /* Hauptmenülinks vertikal ausrichten */
-.block-main-menu>div>div>ul.menu>li
+.block-main-menu>div>div>ul.menu
 	{
 		margin-top: 28px;
+	}
+
+.block-main-menu>div>div>ul.menu>li
+	{
+		float: left;
 	}
 
 .block-main-menu ul.menu li a
@@ -48,6 +66,7 @@ img#logo
 		font-style: italic;
 		text-transform: uppercase;
 		font-weight: normal!important;
+
 	}
 
 .block-main-menu>div>div>ul.menu>li>a
@@ -89,7 +108,7 @@ img#logo
 #region-content .region-content-inner
 
 	{
-		margin-top: 100px;
+		margin-top: 50px;
 	}
 
 .node-page .group-header
@@ -162,6 +181,59 @@ span.text-header
 	}
 /* @end Einfache Seite ==> Geschichte Basic Stylings */
 
+/* @group Produkte */
+/* Styling des Produktbereichs bzw der einzelnen Produktblöcke */
+
+.group-footer .node-produkte
+	{
+		margin-top: 50px;
+	}
+
+.group-footer .node-produkte h2
+	{
+		font-size: 16px;
+		line-height: 1.2;
+		margin-bottom: 5px;
+		height: 40px;
+		background-position: left top;
+	}
+.field-collection-view
+	{
+		border-bottom: none;
+		padding: 0;
+	}
+
+.field-collection-container
+	{
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+
+.field-name-field-produkte-einbinden div.field-items div.field-item div.node-produkte
+	{
+		float: left
+		}
+
+.field-name-field-produkte-einbinden div.field-items div.field-item div.node-produkte
+	{
+		width: 23%;
+		margin-right: 2%;
+	}
+
+.field-name-field-produktdetails>div.field-items>div.even
+	{
+		background-color: #c1c0bc;
+	}
+
+.field-name-field-produkt-bezeichner
+	{
+		font-weight: bold;
+	}
+.node-slogan
+	{
+		clear: both;
+	}
+/* @end Produkte */
 
 /* @group Footer */
 
@@ -220,3 +292,5 @@ span.text-header
 	{
 		color: white;
 	}
+
+/* @end Footer */
