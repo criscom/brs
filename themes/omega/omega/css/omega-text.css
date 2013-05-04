@@ -1,5 +1,5 @@
 body {
-  font: 13px/1.5 Verdana, Helvetica, Arial, sans-serif;
+  font: 14px/1.5 Arial, Helvetica, Verdana, sans-serif;
 }
 
 a:link, a:visited {
@@ -28,7 +28,8 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.05em;
-  font-family: Georgia, 'Times New Roman', serif;
+ /* font-family: Georgia, 'Times New Roman', serif; */
+  font-family: Arial, Helvetica, Verdana, sans-serif;
 }
 
 h1 {
