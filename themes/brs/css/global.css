@@ -1,27 +1,28 @@
-/****** criscom: 04.05.2013 -- BASIC STYLESHEET MOBILE FIRST ******/
+/****** BRS localhost criscom: 04.05.2013 -- BASIC STYLESHEET MOBILE FIRST ******/
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
 body
 	{
-/*		background: url(../images/body_bg.jpg);
-		background-color: #c0beba;
-		background-repeat: no-repeat;
-		background-position: top left; */
+/* background: url(../images/body_bg.jpg); */
+/* background-color: #c0beba; */
+/* background-position: top left; */
+/* background-repeat: no-repeat; */
 		background: url(../images/body_tile.jpg);
 		background-repeat: repeat;
-		/* Font Stylings in omega-text.css */
 		color: #515151;
 		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+/* Font Stylings in omega-text.css */
+
 	}
 
 #section-header .zone-menu-wrapper
-	{
-		background: url(../images/header_bg.jpg);
-		background-repeat: no-repeat;
-		background-position: left top;
-		background-color: #c0beba; 
+	{ 
 		height: 123px;
+		background: url(../images/header_bg.jpg);
+		background-color: #c0beba;
+		background-position: left top;
+		background-repeat: no-repeat;
 	}
 
 p, li
@@ -41,40 +42,37 @@ img#logo
 
 /* @group Hauptmenü */
 
-.block-main-menu ul.menu li
+.block-menu-block-2 ul.menu li
 	{
 		list-style: none;
 		list-style-type: none;
 		list-style-image: none;
+		float: left;
 
 	}
 
 /* Hauptmenülinks vertikal ausrichten */
-.block-main-menu>div>div>ul.menu
+.block-menu-block-2>div>div>div>ul.menu
 	{
 		margin-top: 28px;
 	}
 
-.block-main-menu>div>div>ul.menu>li
-	{
-		float: left;
-	}
 
-.block-main-menu ul.menu li a
+.block-menu-block-2 ul.menu li a
 	{
 		color: white;
-		font-style: italic;
 		text-transform: uppercase;
 		font-weight: normal!important;
+		font-style: italic;
 
 	}
 
-.block-main-menu>div>div>ul.menu>li>a
+.block-menu-block-2>div>div>div>ul.menu>li>a
 	{
 		font-size: 20px;
 	}
 
-.block-main-menu ul.menu li a.active
+.block-menu-block-2 ul.menu li a.active
 	{
 		color: #d9d86e; /* Gelb */
 
@@ -82,21 +80,31 @@ img#logo
 
 /* @group Submenüs */
 
-.block-main-menu ul.menu li.active-trail ul.menu li
+.block-menu-block-3 ul.menu li
 	{
-		margin-top: 5px;
-		margin-left: 0px;
+		float: left;
+		list-style: none;
+		margin-top: 3px;
+		margin-left: 5px;
+		margin-right: 10px;
+
 	}
 
-.block-main-menu ul.menu li.active-trail ul.menu li a.active
+.block-menu-block-3 ul.menu li a
+	{
+		color: white;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+
+.block-menu-block-3 ul.menu li a.active
 	{
 		display: block;
+		padding-left: 45px;
 		height: 19px;
 		background: url(../images/arrow-yellow.png);
-		background-repeat: no-repeat;
 		background-position: left top;
-		padding-top: 2px;
-		padding-left: 45px;
+		background-repeat: no-repeat;
 		
 	}
 
@@ -120,8 +128,8 @@ img#logo
 .node-page .group-left
 
 	{
-		width: 60%;
 		margin-right: 5%;
+		width: 60%;
 	}
 
 .node-page .group-right
@@ -130,12 +138,12 @@ img#logo
 		width: 35%;
 	}
 
-h2
+h1, h2
 	{
-		background: url(../images/arrow-grey.png);
-		background-repeat: no-repeat;
-		background-position: left center;
 		padding-left: 35px;
+		background: url(../images/arrow-grey.png);
+		background-position: left center;
+		background-repeat: no-repeat;
 		color: #575757;
 		text-transform: uppercase;
 		font-weight: normal!important;
@@ -144,7 +152,7 @@ h2
 
 span.text-header
 	{
-		font-size: 20px
+		font-size: 20px;
 	}
 
 .field-name-field-allgemeines-bild div.field-items div.field-item 
@@ -156,28 +164,28 @@ span.text-header
 
 .node-page .group-footer .node-slogan
 	{
-		text-align: center;
-		height: 106px;
+		padding-top: 15px;
+		height: 116px;
 		background: url(../images/slogan_bg.png);
-		background-repeat: no-repeat;
 		background-position: left top;
-		padding-top: 40px;
+		background-repeat: no-repeat;
+		text-align: center;
 	}
 
 .node-page .group-footer .node-slogan .field-name-title div div h2
 	{
-		background: none;
 		margin-bottom: 0px;
-		font-size: 32px;
+		background: none;
 		color: #edf571;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+		font-size: 32px;
 	}
 
 .node-page .group-footer .node-slogan .field-name-field-subtext-slogan
 	{
-		font-size: 20px;
 		color: #575757;
 		font-style: italic;
+		font-size: 20px;
 	}
 /* @end Einfache Seite ==> Geschichte Basic Stylings */
 
@@ -191,33 +199,33 @@ span.text-header
 
 .group-footer .node-produkte h2
 	{
-		font-size: 16px;
-		line-height: 1.2;
 		margin-bottom: 5px;
 		height: 40px;
 		background-position: left top;
+		font-size: 16px;
+		line-height: 1.2;
 	}
 .field-collection-view
 	{
-		border-bottom: none;
 		padding: 0;
+		border-bottom: none;
 	}
 
 .field-collection-container
 	{
-		border-bottom: none;
 		margin-bottom: 0;
+		border-bottom: none;
 	}
 
 .field-name-field-produkte-einbinden div.field-items div.field-item div.node-produkte
 	{
-		float: left
+		float: left;
 		}
 
 .field-name-field-produkte-einbinden div.field-items div.field-item div.node-produkte
 	{
-		width: 23%;
 		margin-right: 2%;
+		width: 23%;
 	}
 
 .field-name-field-produktdetails>div.field-items>div.even
@@ -235,6 +243,21 @@ span.text-header
 	}
 /* @end Produkte */
 
+/* @group Team */
+
+.node-team .group-left
+	{
+		width: 25%;
+		margin-right: 5%;
+	}
+
+.node-team .group-right
+	{
+		margin-right: 20%;
+	}
+
+/* @end Team */
+
 /* @group Footer */
 
 #zone-footer-wrapper
@@ -251,10 +274,10 @@ span.text-header
 
 #zone-footer-wrapper .zone-footer .region h2
 	{
-		color: white;
 		background: url(../images/arrow-white.png);
 		background-position: left 3px;
 		background-repeat: no-repeat;
+		color: white;
 		font-style: italic;
 
 	}
