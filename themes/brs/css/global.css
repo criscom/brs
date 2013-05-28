@@ -112,6 +112,33 @@ img#logo
 
 /* @end Hauptmenü */
 
+/* @group Frontpage Slider */
+
+.flexslider
+{
+	background: transparent;
+}
+
+body.page-frontpage #flexslider_views_slideshow_main_frontpage_slideshow-page div.front-slideshow-beschreibung-inner-wrapper
+{
+	position: absolute;
+	color: #FFF;
+	left: 0px;
+	top: 301px;
+	background-color: #414143;
+	background: rgba(65,65,67,0.75);
+	height: 40px;
+	width: 100%;
+}
+
+.flex-nav-container .flex-control-nav
+{
+	bottom: 10px;
+	left: 230px;
+}
+
+/* @end Frontpage Slider */
+
 /* @group Einfache Seite ==> Geschichte Basic Stylings */
 #region-content .region-content-inner
 
