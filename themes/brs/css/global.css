@@ -112,11 +112,23 @@ img#logo
 
 /* @end Hauptmenü */
 
+/* @group Frontpage Breitenanpassung */
+
+/* ===> siehe brs-alpha-default.normal.css */
+
+/* @end Frontpage Breitenanpassung
+
 /* @group Frontpage Slider */
 
 .flexslider
 {
 	background: transparent;
+	border: 4px solid #515151;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-o-border-radius: 0px;
+	border-radius: 0px; 
+	
 }
 
 body.page-frontpage #flexslider_views_slideshow_main_frontpage_slideshow-page div.front-slideshow-beschreibung-inner-wrapper
@@ -124,20 +136,90 @@ body.page-frontpage #flexslider_views_slideshow_main_frontpage_slideshow-page di
 	position: absolute;
 	color: #FFF;
 	left: 0px;
-	top: 301px;
+	top: 281px;
 	background-color: #414143;
 	background: rgba(65,65,67,0.75);
-	height: 40px;
+	height: 38px;
 	width: 100%;
+	padding-top: 22px;
 }
 
 .flex-nav-container .flex-control-nav
 {
-	bottom: 10px;
+	bottom: 15px;
 	left: 230px;
 }
 
+div.front-slideshow-beschreibung-inner-wrapper span.projekt-link-objekt-ansehen
+{
+	padding-left: 20px;
+}
+
+div.front-slideshow-beschreibung-inner-wrapper span.projekt-weitere-infos
+{
+	background: url('../images/arrow-white.png') no-repeat 20px top;
+	padding-left: 60px;
+}
+
+a.slider-intern
+{
+	color: #ef695c;
+	font-style: italic;
+}
+
+.flex-control-nav li a
+{
+	width: 16px;
+	height: 16px;
+	background: url(../images/bg_control_nav.png) no-repeat left center;
+}
+
+.flex-control-nav li a.active
+{
+	width: 16px;
+	height: 16px;
+	background: url(../images/bg_control_nav_active.png) no-repeat left top;
+}
+
 /* @end Frontpage Slider */
+
+/* @group Front Teaser Reihe */
+
+#block-views-frontpage-teaser-block /* Teaser Block neben dem Slider: Überschrift auf dieselbe Höhe bringen wie Slider */
+
+{
+	margin-top: 45px;
+}
+
+#block-views-frontpage-teaser-block .field-name-body
+{
+	margin-top: 8px;
+	line-height: 16px;	
+}
+
+#block-views-frontpage-teaser-block .field-name-body
+{
+	text-align: justify;
+}
+
+.view-frontpage-teaser .field-name-field-image
+{
+	border: 4px solid #515151
+}
+
+.field-name-field-inhaltsverlinkung-teaser
+{
+	float: right;
+}
+
+a.teaser-link
+{
+	color: #b62c2c;
+	font-style: italic;
+}
+
+
+/* @end Front Teaser Reihe */
 
 /* @group Einfache Seite ==> Geschichte Basic Stylings */
 #region-content .region-content-inner
@@ -174,7 +256,15 @@ h1, h2
 		color: #575757;
 		text-transform: uppercase;
 		font-weight: normal!important;
+				margin-bottom: 10px;
 
+
+	}
+
+h2 a:link, h2 a:visited, h2 a:hover, h2 a:hover
+	{
+		text-decoration: none;
+		color: #575757 !important;
 	}
 
 span.text-header
@@ -189,7 +279,12 @@ span.text-header
 
 /* Slogan */
 
-.node-page .group-footer .node-slogan
+.view-frontpage-slogan
+{
+	margin: 20px 0 12px 0;
+}
+
+/*.node-page .group-footer*/.node-slogan
 	{
 		padding-top: 15px;
 		height: 116px;
@@ -199,7 +294,7 @@ span.text-header
 		text-align: center;
 	}
 
-.node-page .group-footer .node-slogan .field-name-title div div h2
+.node-slogan .field-name-title div div h2
 	{
 		margin-bottom: 0px;
 		background: none;
@@ -208,7 +303,7 @@ span.text-header
 		font-size: 32px;
 	}
 
-.node-page .group-footer .node-slogan .field-name-field-subtext-slogan
+.node-slogan .field-name-field-subtext-slogan
 	{
 		color: #575757;
 		font-style: italic;

@@ -2,11 +2,10 @@
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
-
  
 .flexslider, .flex-nav-container
 {
-	width: 614px;
+	width: 613px;
 	position: relative;
 	float: left;
 }
@@ -14,5 +13,21 @@
 body.page-frontpage #flexslider_views_slideshow_main_frontpage_slideshow-page div.front-slideshow-beschreibung-inner-wrapper
 
 {
-	width: 614px;
+	width: 613px;
 }
+
+/* @group Frontpage Breitenanpassung */
+
+body.page-frontpage .container-12 .grid-9
+{
+	width: 620px;
+}
+
+body.page-frontpage .container-12 .grid-3
+{
+	width: 300px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/* @end Frontpage Breitenanpassung */
